@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --five: #333533;
+    --four: #242423;
+    --three: #f5cb5c;
+    --darker-three:#efb821;
+    --two: #e8eddf;
+    --one: #cfdbd5;
+    --white: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto Slab',serif;
+    font-size: 1rem;
+}
+
+.content{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 16rem auto;
+    grid-template-rows: 2fr 8fr;
+}
+
+/* sidebar */
+
+.sidebar{
+    background-color: var(--two);
+    box-shadow: 10px 0 5px var(--five);
+
+    padding: 20px;
+    grid-area: 1/1/3/2;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo > img{
+    height: 7vh;
+    color: white;
+}
+
+.logo > h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.nav{
+    margin-top: 7vh;
+}
+
+
+.nav img , .tools img{
+    height: 5vh;
+}
+
+.nav-row{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.nav-row:hover{
+    background-color: var(--one);
+}
+
+/* header */
+ 
+.header{
+    background-color: var(--five);
+    padding: 2vh 5vh 3vh 5vh;
+    color: var(--white);
+
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto auto;
+    row-gap: 1vh;
+
+}
+
+.search-bar{
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    grid-template-columns: auto 70%;
+    gap: 20px;
+}
+
+.search-bar > img{
+    height: 4vh;
+}
+
+.search-bar > input{
+    appearance: none;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+    padding: 3px;
+    padding-left: 10px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+.bell-icon{
+    height: 3vh;
+}
+
+.profile-pic{
+    width: 7vh;
+    height: 7vh;
+    object-fit: cover;
+    border-radius: 6vh;
+}
+
+.profile > h1{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 2vh;
+
+}
+
+.info > .profile-pic{
+    width: 9vh;
+    height: 9vh;
+    
+    grid-area: 1/1/3/2;
+}
+
+.info > h1{
+    font-size: 1.25rem;
+}
+
+.button-container{
+    display: grid;
+    grid-template-columns: 15vh 15vh 15vh ;
+    align-items: center;
+    gap: 3%;
+    justify-content: center;
+}
+
+.button-container > button{
+    background-color: var(--three);
+    border: 0;
+    color: var(--white);
+    padding: 1vh 0;
+    border-radius: 3vh;
+    font-weight: 700;
+    
+}
+
+.button-container > button:hover{
+    background-color: var(--darker-three);
+}
+
+
+/* main */
+
+.main{
+    background-color: var(--one);
+    padding: 4vh;
+
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4vh;
+}
+
+.main p{
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.project-section{
+    grid-area: 1/1/3/2;
+
+}
+
+.topic{
+    font-size: 3vh;
+    margin-bottom: 2vh;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+}
+
+.project{
+    background-color: var(--white);
+    padding: 2vh;
+    border-radius: 2vh;
+    border-left: 1.5vh solid var(--three);
+}
+
+.project:hover{
+    box-shadow: 5px 5px 20px rgb(203, 203, 203);
+}
+
+.project-icon{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: end;
+    gap: 1vh;
+}
+
+.project-icon > img{
+    height: 2.5vh;
+}
+
+.announcements-content{
+    border-radius: 2vh;
+    background-color: var(--white);
+    padding: 2vh;
+}
+
+.announcement{
+    padding: 1vh;
+    border-bottom: 2px solid rgba(225, 224, 224, 0.695);
+}
+
+.announcement:hover , 
+.trending-content > div:hover{
+    background-color: rgba(225, 224, 224, 0.695);
+}
+
+.announcement:last-child{
+    border: 0;
+}
+
+.trending-content{
+    background-color: var(--white);
+    border-radius: 2vh;
+    
+}
+
+.trending-content > div{
+    display: grid;
+    grid-template-columns: auto 8fr;
+    gap: 3vh;
+    padding: 1vh 2vh;
+}
+
+
+
+
+

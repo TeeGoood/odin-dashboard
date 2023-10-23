@@ -1,0 +1,14 @@
+Midnight Blue
+#001F3D
+
+Navy Blue
+#045174
+
+Desert Sun
+#D89C60
+
+Burnt Orange
+#E87A00
+
+font : 'roboto slab'
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
